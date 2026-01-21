@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guia de Setup - Portfólio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: linear-gradient(135deg, #0f1729 0%, #1a2438 100%);
+      color: #ffffff;
+      line-height: 1.6;
+      padding: 40px 20px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      color: #00d4ff;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    h2 {
+      color: #00ff88;
+      margin-top: 30px;
+      margin-bottom: 15px;
+    }
+
+    p, li {
+      color: #b0b9c7;
+      margin-bottom: 10px;
+    }
+
+    ul {
+      margin-left: 20px;
+      margin-bottom: 20px;
+    }
+
+    code {
+      background: #243352;
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-family: 'Monaco', 'Menlo', monospace;
+      color: #00d4ff;
+    }
+
+    .section {
+      background: rgba(26, 36, 56, 0.5);
+      border: 1px solid rgba(0, 212, 255, 0.1);
+      border-radius: 10px;
+      padding: 25px;
+      margin-bottom: 25px;
+    }
+
+    .step {
+      background: rgba(36, 51, 82, 0.3);
+      border-left: 4px solid #00d4ff;
+      padding: 15px 20px;
+      margin: 15px 0;
+      border-radius: 4px;
+    }
+
+    .success {
+      background: rgba(0, 255, 136, 0.1);
+      border-left-color: #00ff88;
+    }
+
+    .warning {
+      background: rgba(255, 107, 74, 0.1);
+      border-left-color: #ff6b4a;
+    }
+
+    .highlight {
+      color: #00d4ff;
+      font-weight: 600;
+    }
+
+    button {
+      background: linear-gradient(135deg, #00d4ff 0%, #00ff88 100%);
+      color: #0f1729;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-weight: 600;
+      cursor: pointer;
+      margin-top: 15px;
+      transition: transform 0.2s;
+    }
+
+    button:hover {
+      transform: translateY(-2px);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 15px 0;
+    }
+
+    th, td {
+      padding: 12px;
+      text-align: left;
+      border-bottom: 1px solid rgba(0, 212, 255, 0.1);
+    }
+
+    th {
+      background: rgba(0, 212, 255, 0.1);
+      color: #00d4ff;
+    }
+
+    .file-tree {
+      background: #1a2438;
+      padding: 20px;
+      border-radius: 8px;
+      font-family: 'Monaco', monospace;
+      font-size: 13px;
+      margin: 15px 0;
+      overflow-x: auto;
+    }
+
+    .breadcrumb {
+      color: #00d4ff;
+      font-size: 12px;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🚀 Guia de Setup - Portfólio Full-Stack</h1>
+
+    <!-- Section 1: Estrutura de Pastas -->
+    <div class="section">
+      <h2>📂 Passo 1: Crie a Estrutura de Pastas</h2>
+      <p>Crie a seguinte estrutura na raiz do seu projeto:</p>
+      
+      <div class="file-tree">
+        <div class="breadcrumb">PortifiA/</div>
+        ├── 📄 index.html<br>
+        ├── 📁 css/<br>
+        │   └── 📄 style.css<br>
+        ├── 📁 js/<br>
+        │   └── 📄 main.js<br>
+        ├── 📁 assets/<br>
+        │   ├── 📁 images/<br>
+        │   │   ├── profile.jpg<br>
+        │   │   ├── project-1.jpg<br>
+        │   │   ├── project-2.jpg<br>
+        │   │   └── ...<br>
+        │   └── 📁 icons/<br>
+        └── 📄 README.md
+      </div>
+
+      <div class="step success">
+        ✅ Copie todos os arquivos fornecidos para os locais corretos
+      </div>
+    </div>
+
+    <!-- Section 2: Imagens -->
+    <div class="section">
+      <h2>🖼️ Passo 2: Adicione Suas Imagens</h2>
+      
+      <p><span class="highlight">Passos importantes:</span></p>
+      <ol style="margin-left: 25px;">
+        <li>Crie a pasta <code>assets/images/</code></li>
+        <li>Adicione as seguintes imagens:
+          <table>
+            <thead>
+              <tr>
+                <th>Arquivo</th>
+                <th>Uso</th>
+                <th>Tamanho Recomendado</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><code>profile.jpg</code></td>
+                <td>Foto de perfil (Hero)</td>
+                <td>400x400px</td>
+              </tr>
+              <tr>
+                <td><code>project-1.jpg</code></td>
+                <td>Imagem do Projeto 1</td>
+                <td>600x400px</td>
+              </tr>
+              <tr>
+                <td><code>project-2.jpg</code></td>
+                <td>Imagem do Projeto 2</td>
+                <td>600x400px</td>
+              </tr>
+              <tr>
+                <td><code>project-3.jpg</code> até <code>project-6.jpg</code></td>
+                <td>Outros Projetos</td>
+                <td>600x400px</td>
+              </tr>
+            </tbody>
+          </table>
+        </li>
+      </ol>
+
+      <div class="step warning">
+        💡 Dica: Use ferramentas como <a href="https://tinypng.com" style="color: #00d4ff;">TinyPNG</a> para comprimir imagens e melhorar performance
+      </div>
+    </div>
+
+    <!-- Section 3: Customizar Conteúdo -->
+    <div class="section">
+      <h2>✏️ Passo 3: Personalize o Conteúdo</h2>
+      
+      <p>Abra <code>index.html</code> e altere:</p>
+      
+      <div class="step">
+        <strong>Hero Section:</strong>
+        <ul style="margin-left: 20px;">
+          <li>Nome: "Fábio Mendonça" → Seu Nome</li>
+          <li>Descrição: Altere conforme necessário</li>
+          <li>Foto: <code>assets/images/profile.jpg</code></li>
+        </ul>
+      </div>
+
+      <div class="step">
+        <strong>Sobre Mim:</strong>
+        <ul style="margin-left: 20px;">
+          <li>Texto sobre você</li>
+          <li>Números de estatísticas (experiência, projetos, etc)</li>
+        </ul>
+      </div>
+
+      <div class="step">
+        <strong>Habilidades:</strong>
+        <ul style="margin-left: 20px;">
+          <li>Adicione/remova tecnologias</li>
+          <li>Altere percentuais de proficiência</li>
+        </ul>
+      </div>
+
+      <div class="step">
+        <strong>Projetos:</strong>
+        <ul style="margin-left: 20px;">
+          <li>Título do projeto</li>
+          <li>Descrição</li>
+          <li>Tecnologias usadas</li>
+          <li>Links (GitHub, Demo)</li>
+        </ul>
+      </div>
+
+      <div class="step">
+        <strong>Contato:</strong>
+        <ul style="margin-left: 20px;">
+          <li>Links de GitHub</li>
+          <li>Links de LinkedIn</li>
+          <li>Email</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Section 4: Customizar Estilos -->
+    <div class="section">
+      <h2>🎨 Passo 4: Customize as Cores (Opcional)</h2>
+      
+      <p>Abra <code>css/style.css</code> e altere as variáveis CSS:</p>
+      
+      <div style="background: #1a2438; padding: 20px; border-radius: 8px; margin: 15px 0;">
+        <code style="color: #00ff88;">:root {<br>
+          &nbsp;&nbsp;--color-accent-primary: <span style="color: #ff6b4a;">#00d4ff</span>; /* Cyan */<br>
+          &nbsp;&nbsp;--color-accent-secondary: <span style="color: #ff6b4a;">#ff6b4a</span>; /* Laranja */<br>
+          &nbsp;&nbsp;--color-accent-tertiary: <span style="color: #ff6b4a;">#00ff88</span>; /* Verde */<br>
+        }</code>
+      </div>
+
+      <p>Teste as combinações de cores usando:</p>
+      <ul style="margin-left: 25px;">
+        <li><a href="https://coolors.co" style="color: #00d4ff;">Coolors.co</a> - Gerador de paletas</li>
+        <li><a href="https://colorhexa.com" style="color: #00d4ff;">ColorHexa</a> - Converter cores</li>
+      </ul>
+    </div>
+
+    <!-- Section 5: Testar Localmente -->
+    <div class="section">
+      <h2>🧪 Passo 5: Teste Localmente</h2>
+      
+      <div class="step success">
+        <strong>Opção 1: Navegador Simples</strong>
+        <p>Abra o arquivo <code>index.html</code> diretamente no navegador (clique duplo)</p>
+      </div>
+
+      <div class="step success">
+        <strong>Opção 2: Live Server (VS Code)</strong>
+        <ol style="margin-left: 20px;">
+          <li>Instale a extensão "Live Server"</li>
+          <li>Clique direito em <code>index.html</code></li>
+          <li>Selecione "Open with Live Server"</li>
+        </ol>
+      </div>
+
+      <div class="step success">
+        <strong>Opção 3: Python Local Server</strong>
+        <div style="background: #243352; padding: 10px; border-radius: 4px; margin-top: 10px;">
+          <code>python -m http.server 8000</code><br>
+          <p style="margin-top: 10px; font-size: 12px;">Acesse: <span style="color: #00d4ff;">http://localhost:8000</span></p>
+        </div>
+      </div>
+
+      <div class="step">
+        <strong>Checklist de Testes:</strong>
+        <ul style="margin-left: 20px;">
+          <li>☑️ Abra no desktop</li>
+          <li>☑️ Abra no tablet</li>
+          <li>☑️ Abra no mobile (ou use F12 → Responsivo)</li>
+          <li>☑️ Teste todos os links de navegação</li>
+          <li>☑️ Teste o formulário de contato</li>
+          <li>☑️ Verifique as animações</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Section 6: Publicar Online -->
+    <div class="section">
+      <h2>🌐 Passo 6: Publique Online (Escolha 1)</h2>
+      
+      <h3 style="color: #00d4ff; margin-top: 20px; margin-bottom: 15px;">Opção 1: Netlify (⭐ Recomendado)</h3>
+      <div class="step success">
+        <ol style="margin-left: 20px;">
+          <li>Acesse <a href="https://netlify.com" style="color: #00d4ff;">netlify.com</a></li>
+          <li>Clique em "Add new site" → "Deploy manually"</li>
+          <li>Arraste a pasta do projeto para publicar</li>
+          <li>Seu site fica online em segundos!</li>
+        </ol>
+      </div>
+
+      <h3 style="color: #00d4ff; margin-top: 20px; margin-bottom: 15px;">Opção 2: GitHub Pages</h3>
+      <div class="step">
+        <ol style="margin-left: 20px;">
+          <li>Crie um repositório: <code>username.github.io</code></li>
+          <li>Faça upload dos arquivos</li>
+          <li>Acesse: <code>https://username.github.io</code></li>
+        </ol>
+      </div>
+
+      <h3 style="color: #00d4ff; margin-top: 20px; margin-bottom: 15px;">Opção 3: Vercel</h3>
+      <div class="step">
+        <ol style="margin-left: 20px;">
+          <li>Acesse <a href="https://vercel.com" style="color: #00d4ff;">vercel.com</a></li>
+          <li>Conecte seu GitHub</li>
+          <li>Deploy automático a cada commit</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- Section 7: Dicas de SEO -->
+    <div class="section">
+      <h2>🔍 Passo 7: Otimize para SEO (Opcional)</h2>
+      
+      <p>Adicione no <code>&lt;head&gt;</code> do HTML:</p>
+
+      <div style="background: #1a2438; padding: 15px; border-radius: 8px; margin: 15px 0; overflow-x: auto;">
+        <code style="font-size: 12px;">
+          &lt;meta name="description" content="Seu portfólio aqui"&gt;<br>
+          &lt;meta name="keywords" content="desenvolvedor, web, portfolio"&gt;<br>
+          &lt;meta name="author" content="Seu Nome"&gt;<br>
+          &lt;link rel="canonical" href="https://seusite.com"&gt;
+        </code>
+      </div>
+
+      <p>Depois registre seu site em:</p>
+      <ul style="margin-left: 25px;">
+        <li><a href="https://search.google.com/search-console" style="color: #00d4ff;">Google Search Console</a></li>
+        <li><a href="https://www.bing.com/webmasters" style="color: #00d4ff;">Bing Webmaster Tools</a></li>
+      </ul>
+    </div>
+
+    <!-- Section 8: Troubleshooting -->
+    <div class="section">
+      <h2>🐛 Troubleshooting</h2>
+      
+      <div class="step warning">
+        <strong>❌ Imagens não aparecem</strong>
+        <ul style="margin-left: 20px;">
+          <li>Verifique se os arquivos estão em <code>assets/images/</code></li>
+          <li>Os nomes devem ser: profile.jpg, project-1.jpg, etc</li>
+          <li>Use F12 → Console para ver erros</li>
+        </ul>
+      </div>
+
+      <div class="step warning">
+        <strong>❌ Formulário não funciona</strong>
+        <ul style="margin-left: 20px;">
+          <li>Abra F12 → Console e procure por erros</li>
+          <li>Verifique se JavaScript está habilitado</li>
+          <li>Limpe o cache do navegador (Ctrl+Shift+Del)</li>
+        </ul>
+      </div>
+
+      <div class="step warning">
+        <strong>❌ Menu mobile não funciona</strong>
+        <ul style="margin-left: 20px;">
+          <li>Verifique conexão de arquivos (main.js carregou?)</li>
+          <li>Redimensione a janela abaixo de 768px</li>
+          <li>Teste em outro navegador</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Sucesso -->
+    <div class="section success" style="text-align: center; padding: 40px;">
+      <h2 style="color: #00ff88;">✅ Parabéns!</h2>
+      <p style="font-size: 18px; color: #00d4ff;">Seu portfólio está pronto!</p>
+      <p style="margin-top: 15px;">Agora é hora de:</p>
+      <ul style="margin-left: 0; list-style: none; margin-top: 20px;">
+        <li>🎯 Enviar links para recrutadores</li>
+        <li>📞 Colocar no seu currículo</li>
+        <li>🚀 Compartilhar nas redes sociais</li>
+        <li>💼 Usar em aplicações de emprego</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
